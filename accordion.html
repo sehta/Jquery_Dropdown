@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dropdwon-Styling is a light weight jQuery dropdown plugin for using in web form.">
+    <meta name="keywords" content="dropdown, dropdwonstyling, stylishdropdown, accordion, jquery, plugins">
+    <meta name="author" content="umeshsehta">
+    <title>Dropdown-Styling - jQuery Accordion Dropdown Demo home Page</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+<select class="basic-dropdown-styling">
+  <option value="1">Demo1</option>
+  <option value="2">Demo2</option>
+    <option value="3">Demo3</option>
+	  <option value="4">Demo4</option>
+	    <option value="5">Demo5</option>
+</select>
+<select class="basic-dropdown-styling">
+  <option value="6">Demo6</option>
+  <option value="7">Demo7</option>
+    <option value="8">Demo8</option>
+	  <option value="9">Demo9</option>
+	    <option value="10">Demo10</option>
+</select>
+<select class="basic-dropdown-styling">
+  <option value="11">Demo11</option>
+  <option value="12">Demo12</option>
+    <option value="13">Demo13</option>
+	  <option value="14">Demo14</option>
+	    <option value="15">Demo15</option>
+</select>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+	 <script src="js/jquery.dropdown-styling.min.js"></script>
+    <script>
+	 $('.basic-dropdown-styling').dropdownstyle({
+                    theme: 'blue',   // by default green
+                    is_search: true, // by default false
+					is_hide:false, // Hide/show dropdown on selection
+					on_change: function (obj) { console.log(obj.value); console.log(obj.text); },
+                    complete: function () { console.log('Done!') }
+                });
+    </script>
+  </body>
+</html>
+

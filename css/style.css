@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+}
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    background: #fefefe;
+    color: #34495e;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.231;
+    text-rendering: optimizelegibility;
+    margin: 0;
+}
+
+p
+{
+    font-size: 15px;
+    line-height: 1.722169;
+    margin: 0 0 10px;
+}
+
+a
+{
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+}
+
+a:hover
+{
+    color: #1fb7d8;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/* ===============================Layout====================================== */
+
+.dropdown_search
+{
+    border-radius: 3px;
+    float: left;
+    height: 22px;
+    line-height: 40px;
+    margin: 4px 0 4px 4px;
+    padding: 2px;
+    position: relative;
+    top: 0;
+    width: 93%;
+    color: #005555;
+}
+.dropdown_selected
+{
+    color: white;
+    display: block;
+    padding: 10.5px 11px;
+    text-decoration: none;
+    width: 185px;
+}
+
+.dropdown_search.green
+{
+    border: 1px solid #5fd367;
+}
+.dropdown_selected.green
+{
+    background-color: #5FD367;
+}
+.dropdown_search.blue
+{
+    border: 1px solid #1e5799;
+}
+.dropdown_selected.blue
+{
+    background-color: #1e5799;
+}
+
+
+.dropdown_selected img
+{
+    float: right;
+}
+.dropdown_simple ul
+{
+   
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    width: 203px;
+}
+
+ .dropdown_simple.blue ul
+{
+     border: 1px solid #1e5799;
+    }
+    
+     .dropdown_simple.green ul
+{
+     border: 1px solid #5fd367;
+    }
+
+.dropdown_simple ul h1
+{
+    height: 35px;
+    line-height: 30px;
+    width: 100%;
+}
+.dropdown_simple ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #005555;
+    display: block;
+}
+
+.dropdown_simple ul li a:visited
+{
+    color: white;
+}
+
+.dropdown_simple.green ul li a:hover, .dropdown_simple.green ul li .current
+{
+    color: white;
+    background-color: #5FD367;
+}
+.dropdown_simple.blue ul li a:hover, .dropdown_simple.blue ul li .current
+{
+    color: white;
+    background-color: #1e5799;
+}
+.dropdown_simple ul li h2
+{
+    font-size:20px; text-align:center;font-weight:bold;color:#1e5799;
+    }
